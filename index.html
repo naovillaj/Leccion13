@@ -17,17 +17,17 @@
 
 			<h3>Escoge tu carro para continuar</h3>
 
-			<select name="escogetucarro" id="escogetucarro">
-				<option selected value="">Selecciona tu auto</option>
-				<option value="">Volvo</option>
-				<option value="">Saab</option>
-				<option value="">Mercedes</option>
-				<option value="">Audi</option>
+			<select name="escogetucarro" id="escogetucarro" required="">
+				<option value="">Selecciona tu auto</option>
+				<option value="1">Volvo</option>
+				<option value="2">Saab</option>
+				<option value="3">Mercedes</option>
+				<option value="4">Audi</option>
 			</select><br><br><br>
 			<label for="email">Email</label><br>
-			<input id="email" type="email" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" title= "debe contener un @" required><br><br>
+			<input id="email" type="email" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" title= "debe contener un @ y .(dominio)" required><br><br>
 			<label for="password">Contraseña</label><br>
-			<input id="password" type="password" pattern= "[0-6]{6}" minlength="6" title="mayor a 6 caracteres" required>
+			<input id="password" type="password" pattern= "{6,}" minlength="6" title="mayor a 6 caracteres" required>
 			<br><br>
 			<button type="submit">Enviar</button>
 
